@@ -1,0 +1,212 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+
+html[data-theme='dark'] {
+    background: #000;
+    filter: invert(1) hue-rotate(180deg)
+}
+
+html[data-theme='dark'] img {
+  filter: invert(1) hue-rotate(180deg)
+}
+.card-text p{
+    padding: 0;
+    margin: 0;
+}
+.active{
+    z-index: 2;
+    transform: scale(1.8);
+    display: block;
+    margin-left:50%;
+    
+}
+
+
+header{
+    text-align: center;
+    color: white;
+}
+.nav--main{
+    background-color:#916b24;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.8em 0;
+    list-style: none;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 1px dotted #2B1D0E;
+    
+}
+.nav--item{
+    font-weight:700;
+    color: #2B1D0E;
+}
+.theme--btn{
+    box-sizing: border-box;
+    width: 30px;
+    padding: 0.5em;
+    color: #2B1D0E;
+    border:1px solid silver;
+    border-radius: 50%;
+}
+.header--img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.header--text__wrapper{
+    padding:0 1em;
+    position: relative;
+    width: 30%;
+}
+.header--text{
+    position:absolute;
+    margin-top:3rem;
+    z-index: 1;
+}
+.inStore{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-start;
+    padding: 0;
+    position:relative;
+}
+.items{
+    display: inline-block;
+    background-color: black;
+    border-radius: 20%;
+    padding: 0.3em;
+    color: white;
+    margin: 0.25rem 0.5rem;
+}
+.showlist{
+    margin: 0 0.5rem;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    gap:10px ;
+}
+.card:hover{
+    opacity: 1;
+    color: navy;
+}
+
+.card{
+    background-color:black;
+    opacity: 0.85;
+    margin-top: 1rem;
+    width: 95%;
+    color: azure;
+    box-sizing: border-box;
+    border: 2px solid #916b24;
+    box-shadow: 0 2px 5px rgb(32, 32, 32);
+}
+
+.card-img{
+    width: 100%;
+    min-height:55%;
+}
+.card-name{
+    font-style: italic;
+    font-weight: 700;
+}
+.card-text{
+    
+    text-align: center;
+    margin: 1rem auto;
+}
+.more{
+    text-align: center;
+    margin: 2rem;
+    margin-bottom: 0;
+    padding: 0.8em;
+    background-color: black;
+    border:2px solid #C08D2C;
+    color: white;
+}
+
+article{
+    margin: 0;
+    color: #C08D2C;
+    padding: 0.2rem 2rem;
+}
+article--name{
+    margin: 0.3rem;
+    color: #2B1D0E;
+}
+.article--img__wrapper{
+    width: 100%;
+    border: 2px solid #2B1D0E;
+    }
+hr{
+    background-color: #C08D2C;
+}
+address{
+    padding: 2rem;
+    padding-bottom: 0;
+    color: black;
+    margin: 0;
+}
+
+.contact--icons{
+    text-align:center;
+}
+footer{
+    color: black;
+    margin: 0;
+    padding-bottom: 0.001em;
+}
+
+
+.whatsapp{
+    margin-left: 80%;
+    margin-top: 85vh;
+    z-index: 1;
+    position: fixed;
+    animation: blip infinite 5s ease;
+}
+@keyframes blip{
+    0%{
+        transform:scale(1)
+    }
+    15%{
+        transform:scale(1.2)
+    }
+    30%{
+        transform:scale(1) 
+    }
+    100%{
+        transform:scale(1) 
+    }
+}
+@media (min-width:766px){
+    .showlist{
+        gap:20px;
+    }
+    .showlist-max{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+  
+    }
+    main{
+        margin: 0 2rem;
+    }
+    .whatsapp{
+        width: 60;
+        height: 60;
+        margin-left: 90%;
+    }
+    address{
+        font-size: larger;
+    }
+}

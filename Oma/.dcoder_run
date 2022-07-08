@@ -1,0 +1,4 @@
+# write commands to install modules/lib and run your project, one in each line.
+# server and npm commands are available along with other basic linux commands.
+# command to run
+serve .
