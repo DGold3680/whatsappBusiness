@@ -2,91 +2,47 @@ body{
     margin: 0;
     padding: 0;
     background-color: azure;
+    --colorA:#916B24;
+    --colorB:#2B1D0E;
+    --colorC:#C08D2C;
 }
 
-
-html[data-theme='dark'] {
-    background: #000;
-    filter: invert(1) hue-rotate(180deg)
-}
-
-html[data-theme='dark'] img {
-  filter: invert(1) hue-rotate(180deg)
-}
-.card-text p{
-    padding: 0;
-    margin: 0;
-}
-.active{
-    z-index: 2;
-    transform: scale(1.8);
-    display: block;
-    margin-left:50%;
-    
-}
-
-
-header{
-    text-align: center;
-    color: white;
-}
-.nav--main{
-    background-color:#916b24;
-    margin: 0;
+.nav-main{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0.8em 0;
-    list-style: none;
     position: fixed;
-    width: 100%;
-    z-index: 2;
-    border-bottom: 1px dotted #2B1D0E;
-    
+    z-index: 1;
+    background-color:var(--colorA);
+    margin: 0;
+    padding: 0.8em 0;
+    border-bottom: 1px dotted var(--colorB);
+    list-style: none;
 }
 .nav--item{
     font-weight:700;
-    color: #2B1D0E;
+    color: black;
 }
-.theme--btn{
-    box-sizing: border-box;
-    width: 30px;
-    padding: 0.5em;
-    color: #2B1D0E;
-    border:1px solid silver;
-    border-radius: 50%;
-}
-.header--img{
+
+.header--img,.article--img{
     width: 100%;
     height: 350px;
     object-fit: cover;
 }
-
-.header--text__wrapper{
-    padding:0 1em;
-    position: relative;
-    width: 30%;
-}
-.header--text{
-    position:absolute;
-    margin-top:3rem;
-    z-index: 1;
-}
-.inStore{
+.tags{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    list-style: none;
-    justify-content: flex-start;
     padding: 0;
-    position:relative;
+    list-style: none;
 }
-.items{
-    display: inline-block;
+.tags-list{
     background-color: black;
-    border-radius: 20%;
-    padding: 0.3em;
     color: white;
+    padding: 0.3em;
     margin: 0.25rem 0.5rem;
+    border-radius: 20%;
 }
 .showlist{
     margin: 0 0.5rem;
@@ -95,69 +51,59 @@ header{
     grid-template-columns: 1fr 1fr;
     gap:10px ;
 }
-.card:hover{
-    opacity: 1;
-    color: navy;
-}
 
 .card{
     background-color:black;
     opacity: 0.85;
     margin-top: 1rem;
-    width: 95%;
+    width: 98%;
     color: azure;
     box-sizing: border-box;
-    border: 2px solid #916b24;
+    border: 2px solid var(--colorA);
     box-shadow: 0 2px 5px rgb(32, 32, 32);
+    text-align: center;
+}
+.card:hover{
+    opacity: 1;
+    color: navy;
 }
 
 .card-img{
     width: 100%;
-    min-height:55%;
 }
-.card-name{
+.card--name{
     font-style: italic;
     font-weight: 700;
 }
-.card-text{
-    
-    text-align: center;
-    margin: 1rem auto;
-}
+
 .more{
     text-align: center;
-    margin: 2rem;
-    margin-bottom: 0;
-    padding: 0.8em;
+    color: azure;
     background-color: black;
-    border:2px solid #C08D2C;
-    color: white;
+    margin: 2rem;
+    padding: 0.8em;
+    border:2px solid var(--colorC);
 }
 
 article{
-    margin: 0;
-    color: #C08D2C;
-    padding: 0.2rem 2rem;
-}
-article--name{
-    margin: 0.3rem;
-    color: #2B1D0E;
-}
-.article--img__wrapper{
-    width: 100%;
-    border: 2px solid #2B1D0E;
-    }
-hr{
-    background-color: #C08D2C;
-}
-address{
-    padding: 2rem;
-    padding-bottom: 0;
-    color: black;
-    margin: 0;
+    background-color: black;
+    color: var(--colorC);
+    padding: 0.2em 2em;
 }
 
-.contact--icons{
+.article-img__wrapper{
+    width: 100%;
+    border: 2px solid var(--colorB);
+    }
+hr{
+    background-color: var(--colorC);
+}
+address{
+    padding: 2em;
+    padding-bottom: 0;
+    color: black;
+}
+.contact-icons{
     text-align:center;
 }
 footer{
@@ -165,8 +111,6 @@ footer{
     margin: 0;
     padding-bottom: 0.001em;
 }
-
-
 .whatsapp{
     margin-left: 80%;
     margin-top: 85vh;
@@ -189,14 +133,22 @@ footer{
     }
 }
 @media (min-width:766px){
+    .nav-main{
+        padding: 1.6em;
+    }
+    .tags{
+        justify-content: flex-start;
+    }
+    .tags-list{
+        font-size: larger;
+    }
     .showlist{
         gap:20px;
     }
-    .showlist-max{
+    section{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-  
     }
     main{
         margin: 0 2rem;
@@ -205,6 +157,27 @@ footer{
         width: 60;
         height: 60;
         margin-left: 90%;
+    }
+    article{
+      
+        background-color: azure;
+    }
+    .black{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: black;
+    }
+    .article-text{
+        width: 60%;
+        margin: 1rem;
+    }
+    .article-img__wrapper{
+        border: none;
+        }
+    .article--img{
+        object-fit: contain;
     }
     address{
         font-size: larger;
