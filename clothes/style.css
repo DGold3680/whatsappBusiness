@@ -1,32 +1,11 @@
-.whatsapp{
-    margin-left: 80%;
-    margin-top: 85vh;
-    z-index: 1;
-    position: fixed;
-    animation: blip infinite 5s ease;
-}
 
-@keyframes blip{
-    0%{
-        transform:scale(1)
-    }
-    15%{
-        transform:scale(1.2)
-    }
-    30%{
-        transform:scale(1) 
-    }
-    100%{
-        transform:scale(1) 
-    }
-}
 body{
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:fantasy;
+    text-align: center;
 }
 .nav-main{
     width: 100%;
@@ -90,8 +69,21 @@ h1{
     padding: 0.8em;
     border:2px solid white;
 }
+article{
+    margin: 0;
+    padding: 0.2rem 2rem;
+    text-align: center;
+}
+.article--name{
+    margin: 0.3rem;
+}
+.article--img__wrapper{
+    width: 100%;
+    border: 2px solid black
+    }
 address{
     padding: 0.5em 2em;
+    text-align: center;
 }
 .contact-icons{
     text-align:center;
@@ -99,5 +91,27 @@ address{
 footer{
     margin: 0;
     padding-bottom: 0.001em;
+    text-align: center;
 }
 
+.whatsapp{
+    margin-left: 80%;
+    margin-top: 85vh;
+    z-index: 1;
+    position: fixed;
+    animation: blip infinite 5s ease;
+}
+@keyframes blip{
+    0%{
+        transform:scale(1)
+    }
+    15%{
+        transform:scale(1.2)
+    }
+    30%{
+        transform:scale(1) 
+    }
+    100%{
+        transform:scale(1) 
+    }
+}
