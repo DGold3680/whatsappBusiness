@@ -4,11 +4,7 @@ body {
     color: goldenrod;
     background-image:linear-gradient(to right,black,rgb(8, 12, 46));
 }
-h1{
-    padding: 0;
-    margin: 1rem auto;
-    text-align: center;
-}
+
 
 .header--img {
     width: 100%;
@@ -51,9 +47,7 @@ main{
     margin-bottom: 1.5rem;
     box-sizing: border-box;
 }
-.showlist--item:hover{
-    border: 2px solid goldenrod;
-}
+
 
 .showlist p{
     margin: 0;
