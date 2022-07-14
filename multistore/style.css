@@ -12,8 +12,8 @@ h1{
 
 .header--img {
     width: 100%;
-    object-fit: contain;
-    max-height: 393px;
+    object-fit: cover;
+    max-height: 280px;
 }
 main{
     padding: 1em;
@@ -50,9 +50,6 @@ main{
 .showlist--item{
     margin-bottom: 1.5rem;
     box-sizing: border-box;
-}
-.showlist--item:hover{
-    border: 2px solid goldenrod;
 }
 
 .showlist p{
@@ -127,6 +124,7 @@ address,footer{
         max-width: 760px;
     }
     .header--img{
+        object-fit: contain;
         max-height: 320px;
     }
 }
