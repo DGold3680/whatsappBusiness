@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: goldenrod;
+    background-image:linear-gradient(to right,black,rgb(8, 12, 46));
+}
+h1{
+    padding: 0;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.header--img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 393px;
+}
+main{
+    padding: 1em;
+    text-align: center;
+}
+
+
+.btn{
+    max-width: 300px;
+    margin: 1rem auto;
+    padding: 0.5em;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid goldenrod;
+    border-radius: 20px;
+    font-size: larger;
+    font-weight: 400;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 2px dotted goldenrod;
+}
+.showlist{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.showlist img{
+    width: 100%;
+    height: 240px;
+}
+.showlist--item{
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+}
+.showlist--item:hover{
+    border: 2px solid goldenrod;
+}
+
+.showlist p{
+    margin: 0;
+    padding: 0;
+}
+.price{
+    color: #000;
+}
+.hide{
+    display: none;
+}
+.more{
+    text-align: center;
+    color: azure;
+    background-color: black;
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 0.8em;
+    cursor: pointer;
+}
+
+
+address,footer{
+    padding: 0 2em;
+    text-align: center;
+}
+.whatsapp {
+    margin-left: 80%;
+    margin-top: 85vh;
+    z-index: 1;
+    position: fixed;
+    animation: blip infinite 5s ease;
+}
+
+@keyframes blip {
+    0% {
+        transform: scale(1)
+    }
+
+    15% {
+        transform: scale(1.2)
+    }
+
+    30% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@media (min-width:766px) {
+    .whatsapp {
+        width: 60;
+        height: 60;
+        margin-left: 90%;
+    }
+    main{
+        padding: 1em 6em;
+    }
+    .showlist{
+        gap: 20px;
+    }
+    .showlist--1,.showlist--2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .btn{
+        max-width: 760px;
+    }
+    .header--img{
+        max-height: 320px;
+    }
+}
