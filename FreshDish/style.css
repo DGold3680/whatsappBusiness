@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "inter";
+}
+
+.myNav {
+  display: flex;
+  padding: 0.5em 1.5em;
+  justify-content: space-between;
+}
+.myNav-brand {
+  font-family: "pacifico";
+  font-size: 32px;
+  color: #008000;
+}
+.myNav-items {
+  align-self: center;
+}
+.myNav-link {
+  text-decoration: none;
+  color: #001f00;
+  font-weight: 500;
+  margin: 0 0.5rem;
+}
+.myNav-link:hover {
+  color: #008000;
+}
+.myNav-btn {
+  text-decoration: none;
+  background-color: #008000;
+  color: white;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+.myNav-btn:hover {
+  background-color: #C0FF89;
+  color: #001f00;
+}/*# sourceMappingURL=style.css.map */

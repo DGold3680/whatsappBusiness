@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'inter';
+}
+$base-padding:1em;
+$base-margin:1rem;
+$base-font:16px;
+$color-dark:#001f00;
+$color-md:#008000;
+$color-light:#C0FF89;
+
+
+
+.myNav{
+    display: flex;
+    padding: $base-padding*0.5 $base-padding*1.5;
+    justify-content: space-between;
+    &-brand{
+        font-family: 'pacifico';
+        font-size: $base-font*2;
+        color: $color-md;
+    }
+    &-items{
+        align-self: center;
+    }
+    &-link{
+        text-decoration: none;
+        color:$color-dark;
+        font-weight: 500;
+        margin: 0 $base-margin*0.5;
+        &:hover{
+            color: $color-md;
+        }
+    }
+    &-btn{
+        text-decoration: none;
+        background-color: $color-md;
+        color: white;
+        padding: $base-padding*0.5;
+        border-radius: 5px;
+        &:hover{
+            background-color: $color-light;
+            color: $color-dark;
+        }
+    }
+}
