@@ -4,7 +4,11 @@ Each folder features a simple showpage for products by different whatsapp vendor
 
 
 https://fancy-perfumesx.netlify.app/  
+
 https://mens-fashionx.netlify.app/ 
+
 https://all-fashionstoresx.netlify.app/
+
 https://laptop-store
+
 https://nice-sneakersx.netlify.app/x.netlify.app/
