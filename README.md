@@ -9,6 +9,6 @@ https://mens-fashionx.netlify.app/
 
 https://all-fashionstoresx.netlify.app/
 
-https://laptop-store
+https://laptop-store.netlify.app/
 
 https://nice-sneakersx.netlify.app/x.netlify.app/
