@@ -11,4 +11,4 @@ https://all-fashionstoresx.netlify.app/
 
 https://laptop-store.netlify.app/
 
-https://nice-sneakersx.netlify.app/x.netlify.app/
+https://nice-sneakersx.netlify.app/
